@@ -19,6 +19,8 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >> feeds.c
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages.git' >> feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small.git' >> feeds.conf.default
 
-git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/
-git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/
+cd package/lean/
+git clone https://github.com/jerrykuku/lua-maxminddb.git
+git clone https://github.com/jerrykuku/luci-app-vssr.git
+git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
+cd ../..
